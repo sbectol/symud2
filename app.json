@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "symud2",
-    "slug": "symud2",
-    "version": "1.0.0",
+    "name": "Symud Selog",
+    "slug": "SymudSelog",
+    "version": "1.0.6",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -17,13 +17,27 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sbectol.symydselog",
+      "buildNumber": "10",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Symud Selog requires access to your camera to let you add pictures",
+        "NSPhotoLibraryUsageDescription": "Symud Selog needs to access your camera roll so that you can add pictures. Your images will not be shared",
+        "NSPhotoLibraryAddUsageDescription": "Symud Selog needs to access your camera roll so that you can add pictures. Your images will not be shared"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.sbectol.symudselog",
+      "versionCode": 10,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
